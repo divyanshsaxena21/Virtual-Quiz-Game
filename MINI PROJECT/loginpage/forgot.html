@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forgot Form</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="./forgot-style.css" />
+  </head>
+  <body>
+    <div class="login_form_container">
+      <div class="login_form">
+        <h2>Forgot Password</h2>
+        <div class="input_group">
+          <i class="fa fa-envelope"></i>
+          <input
+            id="email"
+            type="text"
+            placeholder="Email"
+            class="input_text"
+            autocomplete="off"
+            required
+          />
+        </div>
+        <div class="button_group" id="otp_button">
+          <a href="#" onclick="generateotpLink()">Generate OTP</a>
+        </div>
+        <div class="input_group_2">
+          <i class="fa fa-key"></i>
+          <input
+            type="text"
+            placeholder="OTP"
+            class="input_text"
+            autocomplete="off"
+          />
+        </div>
+        <div class="input_group_2">
+          <i class="fa fa-unlock-alt"></i>
+          <input
+            type="password"
+            placeholder="Password"
+            class="input_text"
+            autocomplete="off"
+          />
+        </div>
+        <div class="input_group_2">
+          <i class="fa fa-lock"></i>
+          <input
+            type="password"
+            placeholder="Confirm Password"
+            class="input_text"
+            autocomplete="off"
+          />
+        </div>
+        <div class="button_group" id="login_button">
+          <a href="#">Verify</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="./script.js"></script>
+    <script>
+      function generateotpLink() {
+        var email = $("#email").val();
+
+        if (email === "") {
+          alert("Please enter your registered email address!");
+        } else {
+          alert("An OTP link has been sent to your registered email address.");
+          // Redirect to index.html
+          window.location.href = "index.html";
+        }
+      }
+    </script>
+  </body>
+</html>

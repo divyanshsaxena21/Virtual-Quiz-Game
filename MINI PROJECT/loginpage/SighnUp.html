@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignUp</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="./Sign-style.css" />
+  </head>
+  <body>
+    <form class="login_form_container" id="signup_form">
+      <div class="login_form">
+        <h2>Sign Up</h2>
+        <div class="input_group">
+          <i class="fa fa-envelope"></i>
+          <input
+            id="email"
+            type="email"
+            placeholder="Email"
+            class="input_text"
+            autocomplete="off"
+            required
+          />
+        </div>
+        <div class="input_group">
+          <i class="fa fa-user"></i>
+          <input
+            id="username"
+            type="text"
+            placeholder="Username"
+            class="input_text"
+            autocomplete="off"
+            required
+          />
+        </div>
+        <div class="input_group">
+          <i class="fa fa-unlock-alt"></i>
+          <input
+            id="password"
+            type="password"
+            placeholder="Password"
+            class="input_text"
+            autocomplete="off"
+            required
+          />
+        </div>
+        <div class="input_group">
+          <i class="fa fa-check"></i>
+          <input
+            id="confirm_password"
+            type="password"
+            placeholder="Confirm Password"
+            class="input_text"
+            autocomplete="off"
+            required
+          />
+        </div>
+        <div class="button_group" id="login_button">
+          <a href="#" onclick="validateForm()">Submit</a>
+        </div>
+      </div>
+    </form>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="./script.js"></script>
+    <script>
+      function isValidEmail(email) {
+        // Simple email validation using a regular expression
+        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email);
+      }
+
+      function validateForm() {
+        var email = $("#email").val();
+        var username = $("#username").val();
+        var password = $("#password").val();
+        var confirmPassword = $("#confirm_password").val();
+
+        if (email === "" || username === "" || password === "" || confirmPassword === "") {
+          alert("Please fill in all the required fields!");
+        } else if (!isValidEmail(email)) {
+          alert("Please enter a valid email address!");
+        } else if (password !== confirmPassword) {
+          alert("Passwords do not match!");
+        } else {
+          // Passwords match, email is valid, and all fields are filled
+          // Proceed with form submission or other actions
+          alert("Signup successful!");
+        }
+      }
+    </script>
+  </body>
+</html>
