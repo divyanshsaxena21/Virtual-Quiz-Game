@@ -38,7 +38,7 @@
             />
           </div>
           <div class="button_group" id="login_button">
-            <a href="#" onclick="validateForm()">Submit</a>
+            <a href="../preview.html" onclick="validateForm()">Submit</a>
           </div>
           <div class="fotter">
             <a href="./forgot.html">Forgot Password ?</a>
@@ -62,6 +62,14 @@
           alert("Login successful!");
         }
       }
+
+      function Redirect() {
+          window.location = "../preview.html";
+          }
+          setTimeout(function() {
+          Redirect();
+          }, 3000);
+  
     </script>
   </body>
 </html>
