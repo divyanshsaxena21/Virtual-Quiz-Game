@@ -38,7 +38,7 @@
             />
           </div>
           <div class="button_group" id="login_button">
-            <a href="../preview.html" onclick="validateForm()">Submit</a>
+            <a href="#" onclick="validateForm()">Submit</a>
           </div>
           <div class="fotter">
             <a href="./forgot.html">Forgot Password ?</a>
@@ -57,18 +57,20 @@
 
         if (username === "" || password === "") {
           alert("Please fill in all the required fields!");
+          window.location.href="#";
         } else {
           // Proceed with form submission or other actions
           alert("Login successful!");
+          window.location.href="../preview.html";
         }
       }
 
-      function Redirect() {
-          window.location = "../preview.html";
-          }
-          setTimeout(function() {
-          Redirect();
-          }, 3000);
+      // function Redirect() {
+      //     window.location = "../preview.html";
+      //     }
+      //     setTimeout(function() {
+      //     Redirect();
+      //     }, 3000);
   
     </script>
   </body>
