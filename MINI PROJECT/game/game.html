@@ -5,9 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ViQuiz - Visual Quiz Game</title>
     <link rel="stylesheet" href="./homepage.css">
-    <style>
-       
-    </style>
 </head>
 <body>
     <nav class="container">
@@ -20,11 +17,43 @@
         <li><a href="../contact/contactus.html">Contact</a></li>
     </ul> 
     <main>
-        <div class="endless" onmouseover="document.querySelector('.arcade').classList.add('blurred')" onmouseout="document.querySelector('.arcade').classList.remove('blurred')">
-            <button class="button">ENDLESS</button>
+        <div class="endless" onmouseover="document.querySelector('.arcade').classList.add('blurred')" onmouseout="document.querySelector('.arcade').classList.remove('blurred')" >
+            <button class="button" onclick="openDialog(this)">ARCADE</button>
+            <dialog>
+                <select id="quizType">
+                    <option value="">Select Quiz Type</option>
+                    <option value="coding">Coding Language</option>
+                    <option value="aktu">AKTU Syllabus</option>
+                    <option value="gk">GK</option>
+                  </select>
+
+                  
+                  <div id="subTopics"></div>
+
+                  <button id="startEndlessQuiz" class="btn">
+                    <a href="../homepage/homepage.html" style="text-decoration: none; color: inherit;">START QUIZ</a>
+                  </button>
+                  
+                  
+            </dialog>
         </div>
         <div class="arcade" onmouseover="document.querySelector('.endless').classList.add('blurred')" onmouseout="document.querySelector('.endless').classList.remove('blurred')">
-            <button class="button">ARCADE</button>
+            <button class="button" onclick="openDialog(this)">ENDLESS</button>
+            <dialog id="endlessDialog">
+                <select id="quizType">
+                    <option value="">Select Quiz Type</option>
+                    <option value="coding">Coding Language</option>
+                    <option value="aktu">AKTU Syllabus</option>
+                    <option value="gk">GK</option>
+                  </select>
+                  
+                  <div id="subTopics"></div>
+
+                  <button id="startEndlessQuiz" class="btn">
+                    <a href="../homepage/homepage.html" style="text-decoration: none; color: inherit;">START QUIZ</a>
+                  </button>
+                  
+                  
         </div>
     </main>
     <div>
