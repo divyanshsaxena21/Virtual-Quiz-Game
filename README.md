@@ -39,9 +39,11 @@ Your Journey Begins Now
 Embark on a journey of fun, learning, and friendly competition with Vi_Quiz. Are you ready to become a quiz master?
 ![image](https://github.com/divyanshsaxena21/Virtual-Quiz-Game-Vi-Quiz-/assets/129607728/bc015b06-0658-4410-b12e-c0fc6a68cdce)
 
-https://github.com/divyanshsaxena21/Virtual-Quiz-Game-Vi-Quiz-/assets/129607728/248b7636-21c2-483b-84f5-e3b48df890c8
-
-Real Time Analysis based on the number of questions attempted.
 
 The touching of the index and middle fingers counts as click.
 You take your hand to the option you find appropriate for the respective question and with the hand gesture, do the click.
+
+https://github.com/divyanshsaxena21/Virtual-Quiz-Game-Vi-Quiz-/assets/129607728/248b7636-21c2-483b-84f5-e3b48df890c8
+
+Real Time Analysis based on the number of questions attempted.
+![Screenshot 2024-05-12 170156](https://github.com/divyanshsaxena21/Virtual-Quiz-Game-Vi-Quiz-/assets/129607728/afa0e7a7-1c2f-4700-a878-5a9965a40b33)
