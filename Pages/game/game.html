@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ViQuiz - Visual Quiz Game</title>
+    <link rel="stylesheet" href="./homepage.css">
+    <style>
+       
+    </style>
+</head>
+<body>
+    <nav class="container">
+        <img src="logo 2.png" alt="lOGO" class="logo"  >
+    </nav>  
+    <ul>
+        <li><a href="../preview.html">Home</a></li>
+        <li><a href="../preview.html#about-container">About</a></li>
+        <li><a href="../leader/leaderboard.html">Leaderboard</a></li>
+        <li><a href="../contact/contactus.html">Contact</a></li>
+    </ul> 
+    <main>
+        <div class="endless" onmouseover="document.querySelector('.arcade').classList.add('blurred')" onmouseout="document.querySelector('.arcade').classList.remove('blurred')">
+            <button class="button">ENDLESS</button>
+        </div>
+        <div class="arcade" onmouseover="document.querySelector('.endless').classList.add('blurred')" onmouseout="document.querySelector('.endless').classList.remove('blurred')">
+            <button class="button">ARCADE</button>
+        </div>
+    </main>
+    <div>
+        <footer>
+            <p>&copy; 2023 ViQuiz. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="./homejs.js"></script>
+</body>
+</html> 
