@@ -1,6 +1,6 @@
 Virtual Quiz Game - Vi_Quiz
 
-Vi_Quiz is not just a Virtual Quiz Game; it's an immersive journey into the realms of knowledge and excitement, meticulously crafted during the 3rd semester of B.Tech using Python, OpenCV, Mediapipe, and mysql.connector. Get ready for an engaging and educational experience that transcends age barriers!
+I crafted it during the 3rd semester of B.Tech using Python, OpenCV, Mediapipe, and mysql.connector. Get ready for an engaging and educational experience that transcends age barriers!
 
 Website Overview
 Home Page
