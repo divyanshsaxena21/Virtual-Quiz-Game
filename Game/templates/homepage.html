@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ViQuiz - Visual Quiz Game</title>
+    <link rel="stylesheet" href="../static/homepage.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Welcome to ViQuiz - Visual Quiz Game</h1>
+    </header>
+    <main>
+        <section id="quiz-container">
+            <div id="root">
+                <img class="video" id="video_feed" src="{{ url_for('video_feed') }}"  width="1000" height="550" style="border:1px solid #000;">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 ViQuiz. All rights reserved.</p>
+    </footer>
+    <script src="./homejs.js"></script>
+    
+</body>
+</html>
